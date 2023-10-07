@@ -23,6 +23,7 @@ body {
   align-items: center;
   color: var(--text);
   font-family: "Montserrat", sans-serif;
+  background-color: rgb(99, 99, 99);
 }
 
 button,
@@ -50,6 +51,8 @@ input[type="reset"] {
     #2b274a,
     #34305b
   );
+  -webkit-box-shadow: 5px 5px 8px 5px #272430;
+  box-shadow: 5px 5px 8px 5px #272430;
 }
 
 h1 {
@@ -116,4 +119,3 @@ section {
   text-decoration: line-through;
   color: var(--strikethrough);
 }
-
