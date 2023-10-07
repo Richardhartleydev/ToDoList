@@ -64,7 +64,7 @@ h1 {
 input {
   padding-right: 50px;
   background-color: var(--light);
-  border-radius: 1rem;
+  border-radius: 15px;
   padding: 8px;
   margin-top: 8px;
   color: var(--placeholder);
@@ -74,7 +74,7 @@ input {
   background-color: var(--primary);
   padding: 10px;
   margin-top: 8px;
-  border-radius: 1rem;
+  border-radius: 15px;
   cursor: pointer;
 }
 
@@ -87,7 +87,7 @@ input {
   background-color: var(--primary);
   padding: 8px;
   margin-top: 8px;
-  border-radius: 1rem;
+  border-radius: 15px;
   cursor: pointer;
 }
 
@@ -106,7 +106,8 @@ li {
   align-items: center;
   align-content: center;
   padding: 1rem;
-  border-radius: 10px;
+  width: 271px;
+  border-radius: 15px;
   color: var(--text);
 }
 
