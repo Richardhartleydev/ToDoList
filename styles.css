@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --primary: #241641;
+  --secondary: #3c1f7b;
+  --dark: #272430;
+  --light: #ccc2fe;
+  --reminders: #7e64ff;
+  --strikethrough: #ff636c;
+  --text: #ffffff;
+  --placeholder: #828282;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,16 +18,38 @@
 }
 
 body {
-  position: relative;
-  height: 100vh;
   display: grid;
   justify-content: center;
   align-items: center;
+  color: var(--text);
+  font-family: "Montserrat", sans-serif;
+}
+
+button,
+input,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
 }
 
 .container {
+  margin-top: 1rem;
   margin-bottom: auto;
-  padding-top: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(
+    to top,
+    #100a1d,
+    #18152b,
+    #211e3a,
+    #2b274a,
+    #34305b
+  );
 }
 
 h1 {
@@ -25,22 +60,51 @@ h1 {
 
 input {
   padding-right: 50px;
+  background-color: var(--light);
+  border-radius: 1rem;
+  padding: 8px;
+  margin-top: 8px;
+  color: var(--placeholder);
 }
 
 #button {
-  margin-left: 10px;
+  background-color: var(--primary);
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: var(--secondary);
 }
 
 #reset {
-  margin-top: 0.5rem;
   width: 100%;
+  background-color: var(--primary);
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: var(--secondary);
 }
 
 li {
+  margin-top: 1rem;
   list-style: none;
   cursor: pointer;
   padding-top: 1rem;
   font-size: 1.2rem;
+  background-color: var(--secondary);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--text);
 }
 
 section {
@@ -50,11 +114,6 @@ section {
 
 .done {
   text-decoration: line-through;
-  color: red;
+  color: var(--strikethrough);
 }
 
-footer {
-  text-align: center;
-  margin-top: auto;
-  padding-bottom: 10px;
-}
