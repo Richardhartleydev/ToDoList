@@ -43,6 +43,11 @@ li {
   font-size: 1.2rem;
 }
 
+section {
+  inline-size: 265px;
+  overflow-wrap: break-word;
+}
+
 .done {
   text-decoration: line-through;
   color: red;
